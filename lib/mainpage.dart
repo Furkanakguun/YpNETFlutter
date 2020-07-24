@@ -78,10 +78,12 @@ class _MainPageState extends State<MainPage> {
              IconButton(
               icon: Icon(Icons.exit_to_app, color: Colors.white),
               onPressed: () {
+                Navigator.of(context).pop();
                Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) => Login()));
+                    
               },
             )
           ],
